@@ -1,0 +1,218 @@
+2024-05-26T17:22:39+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v2/checkout/orders
+    [method] => POST
+    [http_status] => 422
+    [request] => Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => 
+                    [surname] => 
+                )
+
+            [email_address] => umangtiwari12345@gmail.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 498.00
+                            [currency_code] => INR
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => INR
+                                            [value] => 398.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => INR
+                                            [value] => 100.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => INR
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => INR
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => INR
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Strips T-Shirt
+                                    [quantity] => 2
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => INR
+                                            [value] => 199.00
+                                        )
+
+                                    [sku] => PTS764
+                                    [description] => Product ID: 17
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => NO_SHIPPING
+            [return_url] => http://localhost/wordpress/wc-api/ppcp_checkout_return/?_checkoutnonce=c5f8d35feb
+            [cancel_url] => http://localhost/wordpress/checkout/
+            [brand_name] => GoEcom
+        )
+
+)
+
+    [error] => Array
+        (
+            [name] => UNPROCESSABLE_ENTITY
+            [details] => Array
+                (
+                    [0] => Array
+                        (
+                            [issue] => CURRENCY_NOT_SUPPORTED
+                            [links] => Array
+                                (
+                                )
+
+                            [description] => Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes.
+                        )
+
+                )
+
+            [message] => The requested action could not be performed, semantically incorrect, or failed business validation.
+            [debug_id] => 436e550212c75
+            [links] => Array
+                (
+                    [0] => Array
+                        (
+                            [href] => https://developer.paypal.com/docs/api/orders/v2/#error-CURRENCY_NOT_SUPPORTED
+                            [rel] => information_link
+                        )
+
+                )
+
+        )
+
+)
+
+2024-05-26T17:22:40+00:00 ERROR Error creating PayPal order. Msg: Currency code is not currently supported. Please refer https://developer.paypal.com/docs/integration/direct/rest/currency-codes/ for list of supported currency codes. Params: Array
+(
+    [intent] => CAPTURE
+    [payer] => Array
+        (
+            [name] => Array
+                (
+                    [given_name] => 
+                    [surname] => 
+                )
+
+            [email_address] => umangtiwari12345@gmail.com
+        )
+
+    [purchase_units] => Array
+        (
+            [0] => Array
+                (
+                    [amount] => Array
+                        (
+                            [value] => 498.00
+                            [currency_code] => INR
+                            [breakdown] => Array
+                                (
+                                    [item_total] => Array
+                                        (
+                                            [currency_code] => INR
+                                            [value] => 398.00
+                                        )
+
+                                    [shipping] => Array
+                                        (
+                                            [currency_code] => INR
+                                            [value] => 100.00
+                                        )
+
+                                    [tax_total] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => INR
+                                        )
+
+                                    [discount] => Array
+                                        (
+                                            [value] => 0.00
+                                            [currency_code] => INR
+                                        )
+
+                                    [handling] => Array
+                                        (
+                                            [currency_code] => INR
+                                            [value] => 0.00
+                                        )
+
+                                )
+
+                        )
+
+                    [items] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => Strips T-Shirt
+                                    [quantity] => 2
+                                    [unit_amount] => Array
+                                        (
+                                            [currency_code] => INR
+                                            [value] => 199.00
+                                        )
+
+                                    [sku] => PTS764
+                                    [description] => Product ID: 17
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [application_context] => Array
+        (
+            [shipping_preference] => NO_SHIPPING
+            [return_url] => http://localhost/wordpress/wc-api/ppcp_checkout_return/?_checkoutnonce=c5f8d35feb
+            [cancel_url] => http://localhost/wordpress/checkout/
+            [brand_name] => GoEcom
+        )
+
+)
+
